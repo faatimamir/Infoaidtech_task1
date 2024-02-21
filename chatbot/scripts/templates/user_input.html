@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat bot</title>
+    <style>
+        .center {
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1> Hello </h1>
+        <h2>how can i help you today</h2>
+
+        <form method="POST" action="/analyse-emotion">
+            <div><label for="input_prompt">Input Prompt:</label></div>
+            <div><textarea id="input_prompt" name="input_prompt" rows="5" cols="40" required></textarea></div>
+            <br>
+            <div><input type="submit" value="Submit"></div>
+        </form>
+    </div>
+</body>
+
+</html>
